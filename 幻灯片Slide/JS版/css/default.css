@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, form, fieldset, legend, img ,input{ margin:0; padding:0; }
+ul, ol { list-style:none; }
+textarea { resize:none; border:1px solid #c3c3c3;} /*防止拖动*/
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+a{text-decoration:none;color:#333; }
+a:hover{text-decoration: underline;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;}
+header,footer,article,aside,section,nav,menu,hgroup,details,dialog,figure,figcaption {display: block}
+body {
+    font:14px/150% Arial,Verdana,Sans-serif;
+    color:#333;
+    background:#f5f5f5;
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-indent{text-indent: 2em;}
+.fl_left{float: left;}
+.fl_right{float: right;}
