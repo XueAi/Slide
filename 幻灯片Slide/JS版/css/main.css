@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.slideBox{
+.slide-box{
 	width: 500px;
 	height: 300px;
 	overflow: hidden;
@@ -7,14 +7,35 @@
 	border: 5px solid #000;
 	position: relative;
 }
-.slideBox ul img{
-	width: 500px;
+.slide-box ul img{
+	width: 505px;
 }
-.slideBox ul li{
+.slide-box ul li{
 	float: left;
 }
 .slide{
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+.slide-focus{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.slide-focus span{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    background: #777;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.slide-focus span:hover{
+	opacity: 1;
 }
