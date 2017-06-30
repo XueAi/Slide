@@ -8,20 +8,49 @@
 	<link rel="stylesheet" href="./css/main.css">
 
 	<script src="./js/slide.js"></script>
+	<script>
+		/*
+		*启动轮播图，请在DOM onload后启动。请注意参数类型
+		*	第一个参数（String） 为轮播图外盒子的id，这里是ul节点
+		*	第二个参数（String） 为焦点的插入节点位置
+		*	第三个参数（Number） 为幻灯片播放速度（间隔），单位：毫秒，默认值：2000
+		*	第四个参数（Number） 为幻灯片过度效果速度，单位：px/毫秒，默认值：10
+		 */
+		window.onload = function (){
+			runSlide('slide', 'slideFocus', 2000, 10);
+		}
+	</script>
 </head>
 <body>
 	<h1>我要做一个幻灯片</h1>
 	<div>
-		<div id="slideBox" class="slide-box">
+	<!-- 幻灯片开始 -->
+		<!-- id用于js，class用于css -->
+		<div class="slide-box">
 			<ul id="slide" class="slide">
-				<li><img src="./img/pic01.jpg" alt="pic01"></li>
-				<li><img src="./img/pic02.jpg" alt="pic02"></li>
-				<li><img src="./img/pic03.jpg" alt="pic03"></li>
+				<li>
+					<img src="./img/pic01.jpg" alt="pic01">
+					<span class="title-bg"></span>
+					<p class="title">Title：这是第一张幻灯片</p>
+				</li>
+				<li>
+					<img src="./img/pic02.jpg" alt="pic02">
+					<span class="title-bg"></span>
+					<p class="title">Title：这是第二张幻灯片</p>
+				</li>
+				<li>
+					<img src="./img/pic03.jpg" alt="pic03">
+					<span class="title-bg"></span>
+					<p class="title">Title：这是第三张幻灯片</p>
+				</li>
 			</ul>
+
+			<!-- 焦点节点 -->
 			<div id="slideFocus" class="slide-focus">
 				
 			</div>
 		</div>
+	<!-- 幻灯片结束 -->
 	</div>
 </body>
 </html>
